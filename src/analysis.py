@@ -23,7 +23,6 @@ ALG_NAME_MAPPING = {
     'create_incomplete_pcm_AHP_express': 'AHP Express',
     'create_incomplete_pcm_star': 'Star',
     'create_incomplete_pcm_cycle': 'Cycle',
-    'create_incomplete_pcm_2_regular': 'Cycle',
     'create_incomplete_pcm_tournament': 'C-AHP',
     'GeometricMean': 'Benchmark',
     'create_incomplete_pcm_tournament_champion_closure': 'CC-AHP'
