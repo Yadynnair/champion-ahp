@@ -48,29 +48,7 @@ def interpret_kendalls_w(w):
         return "strong"
     else:
         return "very strong"
-
-
-def calculate_cliffs_delta(x, y):
-    """Cliff's Delta: delta = (n_plus - n_minus) / (n1 * n2)"""
-    x, y = np.array(x), np.array(y)
-    n_plus = np.sum(x[:, None] > y[None, :])
-    n_minus = np.sum(x[:, None] < y[None, :])
-    return (n_plus - n_minus) / (len(x) * len(y))
-
-
-def interpret_cliffs_delta(delta):
-    """Return interpretation of Cliff's Delta (Romano et al., 2006)"""
-    abs_delta = abs(delta)
-    if abs_delta < 0.147:
-        return "negligible"
-    elif abs_delta < 0.330:
-        return "small"
-    elif abs_delta < 0.474:
-        return "medium"
-    else:
-        return "large"
-
-
+        
 def generate_compact_letter_display(algorithms, conover_matrix, alpha=0.05):
     """
     Generate Compact Letter Display (CLD) from Conover post-hoc results.
