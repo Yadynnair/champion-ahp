@@ -35,8 +35,6 @@ from .analysis import (
     print_manuscript_summary,
     calculate_kendalls_w,
     interpret_kendalls_w,
-    calculate_cliffs_delta,
-    interpret_cliffs_delta,
 )
 
 __version__ = '1.0.0'
